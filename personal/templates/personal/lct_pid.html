@@ -1,0 +1,26 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+<header>
+    <h4>LCD Proportion Integral Derivitive Controller Setup</h4>
+</header>
+<p>
+    Our calibration system consisted of heating a small cut-out of liquid crystal (LC) 
+    to a, known temperature, taking pictures of the LC sheet, and then recording the 
+    color that the sheet turned at the predetermined temperature. To ensure that the 
+    copper block that would heat the LC sheet heated up at a constant rate and did 
+    not overshoot the target temperature we employed the use of a Proportion Integral 
+    Derivative (PID) controller. I was tasked with finding and optimizing these PID 
+    gains. Using Simulink I was able to model our system and determine the correct 
+    gains and was able to reduce the overshoot to less than 0.5 degrees celcius.
+</p>
+<figure>
+    <center>
+        <p>
+            <img src="../../static/personal/img/project_2/simulink.jpg" class="responsive-img" style='max-height:400px' alt "lcd_setup" />
+        </p>
+    <figurecaption>simulink model of project</figurecaption>
+    </center>
+</figure>
+
+{% endblock %}
